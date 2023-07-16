@@ -13,20 +13,19 @@
 }
 
 .app{
-    height: 100%;
-    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/img1.jpg');
+    height: 100vh;
+    /* background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('images/img1.jpg'); */
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: background-image 0.5s ease-in-out;
 
 }
 .card{
     background-color: whitesmoke;
-    width: 40%;
-    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,23 +43,57 @@
 font-family: 'Ysabeau SC', sans-serif;
 }
 .button{
-    position: relative;
+    /* position: relative; */
     outline: none;
-    border-radius: 50px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    text-transform: uppercase;
-    height: 200px;
-    width: 210px;
+    text-transform: capitalize;
+    padding: 10px;
     opacity: 1;
     background-color: white;
     
 }
-@media only screen and (max-width:600px){
+
+
+
+/* @media only screen and (max-width:2000px){
     .card{
         width: 80%;
         height: 30%;
+        background-color:blue;
     }
-}
+} */
+
+/* @media only screen and (max-width:1500px){
+    .card{
+        width: 50%;
+        height: 40%;
+        background-color:green;
+        padding-bottom: 30px;
+    }
+} */
+
+/* @media only screen and (max-width:800px){
+    .card{
+        width: 80%;
+        height: 45%;
+        padding:20px;
+        background-color:pink;
+    }
+} */
+
+/* @media only screen and (max-width:500px){
+    .card{
+        width: 80%;
+        height: 30%;
+        padding:20px;
+        background-color:yellow;
+        font-size: 10px;
+    }
+
+  
+    
+} */
